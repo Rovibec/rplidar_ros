@@ -195,7 +195,7 @@ bool stop_motor(std_srvs::Empty::Request &req,
 
   ROS_DEBUG("Stop motor");
   drv->setMotorSpeed(0);
-  drc->stop();
+  drv->stop();
   return true;
 }
 
